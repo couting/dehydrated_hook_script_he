@@ -74,7 +74,6 @@ deploy_challenge() {
   TOKEN_VALUE=${2}
   RECORD_NAME="_acme-challenge.$DOMAIN"
   find_zone
-  get_dns_recordid
     curl -L --silent --show-error --cookie "$HE_COOKIE" \
     --form "account=" \
     --form "menu=edit_zone" \
